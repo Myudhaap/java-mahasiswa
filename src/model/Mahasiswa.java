@@ -1,3 +1,5 @@
+package model;
+
 public class Mahasiswa implements IMahasiswa{
   private String name, nim, alamat;
   public Mahasiswa(String name, String nim, String alamat){
@@ -7,8 +9,10 @@ public class Mahasiswa implements IMahasiswa{
   }
 
   @Override
-  public String[] getBiodata() {
-    return new String[] {this.name,this.nim,this.alamat};
+  public void getBiodata() {
+    System.out.println("Nama: " + this.name);
+    System.out.println("Nim: " + this.nim);
+    System.out.println("Alamat: " + this.alamat);
   }
 
   @Override

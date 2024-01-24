@@ -1,5 +1,7 @@
+package model;
+
 public interface IMahasiswa {
-  public String[] getBiodata();
+  public void getBiodata();
   public String getName();
   public String getNim();
   public String getAlamat();
