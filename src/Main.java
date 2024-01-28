@@ -7,13 +7,13 @@ import java.util.Scanner;
 public class Main {
 
   public static void main(String[] args) {
-    Scanner input = new Scanner(System.in);
-    run(input);
+    run();
   }
 
-  static void run(Scanner input){
-    System.out.println("SISTEM INFORMASI MAHASISWA");
+  static void run(){
+    Scanner input = new Scanner(System.in);
     ControllerMahasiswa controllerMahasiswa = new ControllerMahasiswa();
+    System.out.println("SISTEM INFORMASI MAHASISWA");
     menu(input, controllerMahasiswa);
   }
 
